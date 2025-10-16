@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git | lin</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="description" content="记录进步的点滴">
+    <meta property="og:site_name" content="lin">
+    <meta property="og:title" content="Git">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bigdragonlin.github.io/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E5%B7%A5%E4%BB%B6/Git.html">
+    <meta name="twitter:title" content="Git">
+    <meta name="twitter:url" content="https://bigdragonlin.github.io/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E5%B7%A5%E4%BB%B6/Git.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="程序员, 编程, 计算机">
+    <meta property="article:tag" content="程序员">
+    <meta name="keywords" content="编程学习路线, 编程知识百科, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 求职, 面经">
+    
+    <link rel="preload" href="/assets/css/0.styles.99b3430f.css" as="style"><link rel="preload" href="/assets/js/app.864bef02.js" as="script"><link rel="preload" href="/assets/js/1.a3dfb871.js" as="script"><link rel="preload" href="/assets/js/93.fc03df3e.js" as="script"><link rel="prefetch" href="/assets/js/10.c9f6e15d.js"><link rel="prefetch" href="/assets/js/100.8a6433c8.js"><link rel="prefetch" href="/assets/js/101.c2293009.js"><link rel="prefetch" href="/assets/js/102.e1c3f24b.js"><link rel="prefetch" href="/assets/js/103.bf53b9c8.js"><link rel="prefetch" href="/assets/js/104.157e77e8.js"><link rel="prefetch" href="/assets/js/105.9ca43390.js"><link rel="prefetch" href="/assets/js/106.fa317389.js"><link rel="prefetch" href="/assets/js/107.043af6dc.js"><link rel="prefetch" href="/assets/js/108.bf17c2b5.js"><link rel="prefetch" href="/assets/js/109.0f1b1da9.js"><link rel="prefetch" href="/assets/js/11.675ae2e2.js"><link rel="prefetch" href="/assets/js/110.f4e87a18.js"><link rel="prefetch" href="/assets/js/111.16545c58.js"><link rel="prefetch" href="/assets/js/112.359669af.js"><link rel="prefetch" href="/assets/js/113.961184aa.js"><link rel="prefetch" href="/assets/js/114.f788fd92.js"><link rel="prefetch" href="/assets/js/115.a69a17ee.js"><link rel="prefetch" href="/assets/js/116.49a9548d.js"><link rel="prefetch" href="/assets/js/117.a9ceb4b7.js"><link rel="prefetch" href="/assets/js/118.9e819ad1.js"><link rel="prefetch" href="/assets/js/119.5046f875.js"><link rel="prefetch" href="/assets/js/12.611fe139.js"><link rel="prefetch" href="/assets/js/120.e6266904.js"><link rel="prefetch" href="/assets/js/121.58cddf5c.js"><link rel="prefetch" href="/assets/js/122.bf02de8f.js"><link rel="prefetch" href="/assets/js/123.3058cf41.js"><link rel="prefetch" href="/assets/js/124.eb6c5a8d.js"><link rel="prefetch" href="/assets/js/125.f8b79ff7.js"><link rel="prefetch" href="/assets/js/126.6d88afcd.js"><link rel="prefetch" href="/assets/js/127.f0de75d9.js"><link rel="prefetch" href="/assets/js/128.e3170bcd.js"><link rel="prefetch" href="/assets/js/129.d19271cc.js"><link rel="prefetch" href="/assets/js/13.bbcb9761.js"><link rel="prefetch" href="/assets/js/130.dbfc385f.js"><link rel="prefetch" href="/assets/js/131.29442bfe.js"><link rel="prefetch" href="/assets/js/132.29f15f9c.js"><link rel="prefetch" href="/assets/js/133.a5b71821.js"><link rel="prefetch" href="/assets/js/134.ff2dbb3a.js"><link rel="prefetch" href="/assets/js/135.91d85695.js"><link rel="prefetch" href="/assets/js/136.3d559254.js"><link rel="prefetch" href="/assets/js/137.060c27f6.js"><link rel="prefetch" href="/assets/js/138.5256823e.js"><link rel="prefetch" href="/assets/js/139.3d6dcd70.js"><link rel="prefetch" href="/assets/js/14.27da1495.js"><link rel="prefetch" href="/assets/js/140.7dbd39eb.js"><link rel="prefetch" href="/assets/js/141.f00e6674.js"><link rel="prefetch" href="/assets/js/142.17e87740.js"><link rel="prefetch" href="/assets/js/143.a2851f84.js"><link rel="prefetch" href="/assets/js/144.c4abe3a9.js"><link rel="prefetch" href="/assets/js/15.49e75645.js"><link rel="prefetch" href="/assets/js/16.09145204.js"><link rel="prefetch" href="/assets/js/17.6b86b1e5.js"><link rel="prefetch" href="/assets/js/18.d042910d.js"><link rel="prefetch" href="/assets/js/19.ddb3a096.js"><link rel="prefetch" href="/assets/js/2.d74f4bad.js"><link rel="prefetch" href="/assets/js/20.3ace0aa5.js"><link rel="prefetch" href="/assets/js/21.7eb1c3cc.js"><link rel="prefetch" href="/assets/js/22.cff4c035.js"><link rel="prefetch" href="/assets/js/23.07adb667.js"><link rel="prefetch" href="/assets/js/24.29d6a672.js"><link rel="prefetch" href="/assets/js/25.f83be928.js"><link rel="prefetch" href="/assets/js/26.d1712bb0.js"><link rel="prefetch" href="/assets/js/27.25530b6e.js"><link rel="prefetch" href="/assets/js/28.a340957f.js"><link rel="prefetch" href="/assets/js/29.f2754eb7.js"><link rel="prefetch" href="/assets/js/3.72a02e88.js"><link rel="prefetch" href="/assets/js/30.8e7cf4dd.js"><link rel="prefetch" href="/assets/js/31.bf3faca2.js"><link rel="prefetch" href="/assets/js/32.4087c135.js"><link rel="prefetch" href="/assets/js/33.7696f9d2.js"><link rel="prefetch" href="/assets/js/34.56b8aa20.js"><link rel="prefetch" href="/assets/js/35.e5dd505a.js"><link rel="prefetch" href="/assets/js/36.933ef963.js"><link rel="prefetch" href="/assets/js/37.4bf277b3.js"><link rel="prefetch" href="/assets/js/38.898c86e2.js"><link rel="prefetch" href="/assets/js/39.2b08ff32.js"><link rel="prefetch" href="/assets/js/4.2002c685.js"><link rel="prefetch" href="/assets/js/40.de5b4385.js"><link rel="prefetch" href="/assets/js/41.4b058022.js"><link rel="prefetch" href="/assets/js/42.d9754d64.js"><link rel="prefetch" href="/assets/js/43.1688f578.js"><link rel="prefetch" href="/assets/js/44.8b11eb44.js"><link rel="prefetch" href="/assets/js/45.3fb7a5e7.js"><link rel="prefetch" href="/assets/js/46.7512c87a.js"><link rel="prefetch" href="/assets/js/47.69f52a8d.js"><link rel="prefetch" href="/assets/js/48.48367446.js"><link rel="prefetch" href="/assets/js/49.154237f1.js"><link rel="prefetch" href="/assets/js/5.ed8fd711.js"><link rel="prefetch" href="/assets/js/50.2d51489f.js"><link rel="prefetch" href="/assets/js/51.e3e48a00.js"><link rel="prefetch" href="/assets/js/52.71319e9d.js"><link rel="prefetch" href="/assets/js/53.76670559.js"><link rel="prefetch" href="/assets/js/54.b2a18c59.js"><link rel="prefetch" href="/assets/js/55.a206441f.js"><link rel="prefetch" href="/assets/js/56.1b940626.js"><link rel="prefetch" href="/assets/js/57.6ab294c0.js"><link rel="prefetch" href="/assets/js/58.a2057559.js"><link rel="prefetch" href="/assets/js/59.3c0e4c86.js"><link rel="prefetch" href="/assets/js/6.a237149d.js"><link rel="prefetch" href="/assets/js/60.9d8d9dbc.js"><link rel="prefetch" href="/assets/js/61.b3811e77.js"><link rel="prefetch" href="/assets/js/62.5d38f7cd.js"><link rel="prefetch" href="/assets/js/63.264e91fb.js"><link rel="prefetch" href="/assets/js/64.4b55aee3.js"><link rel="prefetch" href="/assets/js/65.09c20b34.js"><link rel="prefetch" href="/assets/js/66.0fc1c46a.js"><link rel="prefetch" href="/assets/js/67.4c9f3b4a.js"><link rel="prefetch" href="/assets/js/68.4e547366.js"><link rel="prefetch" href="/assets/js/69.dc0a9ac3.js"><link rel="prefetch" href="/assets/js/7.b3d59ec2.js"><link rel="prefetch" href="/assets/js/70.b2a017c1.js"><link rel="prefetch" href="/assets/js/71.da6e8dd0.js"><link rel="prefetch" href="/assets/js/72.679cfcfc.js"><link rel="prefetch" href="/assets/js/73.cad8a570.js"><link rel="prefetch" href="/assets/js/74.0b4291a0.js"><link rel="prefetch" href="/assets/js/75.012f73db.js"><link rel="prefetch" href="/assets/js/76.b119d1d7.js"><link rel="prefetch" href="/assets/js/77.9d8542ce.js"><link rel="prefetch" href="/assets/js/78.11fe2c8f.js"><link rel="prefetch" href="/assets/js/79.29ec4f8c.js"><link rel="prefetch" href="/assets/js/80.9b0351da.js"><link rel="prefetch" href="/assets/js/81.484df1ec.js"><link rel="prefetch" href="/assets/js/82.997096cc.js"><link rel="prefetch" href="/assets/js/83.e0d99296.js"><link rel="prefetch" href="/assets/js/84.b6a6173e.js"><link rel="prefetch" href="/assets/js/85.23bee2c8.js"><link rel="prefetch" href="/assets/js/86.e969e7f4.js"><link rel="prefetch" href="/assets/js/87.c94d3f79.js"><link rel="prefetch" href="/assets/js/88.62d6286c.js"><link rel="prefetch" href="/assets/js/89.e782e446.js"><link rel="prefetch" href="/assets/js/90.084964cc.js"><link rel="prefetch" href="/assets/js/91.7723e00b.js"><link rel="prefetch" href="/assets/js/92.3b4b1296.js"><link rel="prefetch" href="/assets/js/94.10f95496.js"><link rel="prefetch" href="/assets/js/95.b9a17ac4.js"><link rel="prefetch" href="/assets/js/96.1527c152.js"><link rel="prefetch" href="/assets/js/97.51430cba.js"><link rel="prefetch" href="/assets/js/98.35fb5064.js"><link rel="prefetch" href="/assets/js/99.7fa83e2c.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.3b28fe31.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.99b3430f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="lin" class="logo"> <span class="site-name can-hide">lin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/知识碎片/" class="nav-link"><!---->
+  知识碎片
+</a></div><div class="nav-item"><a href="/读书笔记/" class="nav-link"><!---->
+  读书笔记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/知识碎片/" class="nav-link"><!---->
+  知识碎片
+</a></div><div class="nav-item"><a href="/读书笔记/" class="nav-link"><!---->
+  读书笔记
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="content"><div style="width:100%"><div class="theme-default-content custom-content content__default"><h1 id="git"><a href="#git" class="header-anchor">#</a> Git</h1> <h1 id="git常用命令"><a href="#git常用命令" class="header-anchor">#</a> Git常用命令</h1> <h3 id="git全局命令"><a href="#git全局命令" class="header-anchor">#</a> git全局命令</h3> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code><span class="token comment">## 设置用户信息</span>
+git config --global user.name &quot;linmu&quot;
+git config --global user.email &quot;1363992060@qq.com&quot;
+<span class="token comment">## 查看配置信息</span>
+git config --list
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="获取git仓库"><a href="#获取git仓库" class="header-anchor">#</a> 获取git仓库</h3> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code><span class="token comment">##初始化本地仓库</span>
+git init 
+<span class="token comment">## git clone 从远程克隆仓库将项目克隆到本地</span>
+git clone git@gitee.com:rahman/StudentHomeWork.git
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="工作区、暂存区、版本库"><a href="#工作区、暂存区、版本库" class="header-anchor">#</a> 工作区、暂存区、版本库</h3> <p>工作区：和.git同级的文件所在目录</p> <p>暂存区：在.git目录中的index文件夹内</p> <p>版本库：.git文件夹</p> <div class="language-mermaid line-numbers-mode"><pre class="language-mermaid"><code><span class="token keyword">graph</span> LR
+工作区文件<span class="token inter-arrow-label"><span class="token arrow-head arrow operator">--</span><span class="token label property">add *</span><span class="token arrow operator">--&gt;</span></span>暂存区<span class="token inter-arrow-label"><span class="token arrow-head arrow operator">--</span><span class="token label property">commit</span><span class="token arrow operator">--&gt;</span></span>版本库<span class="token inter-arrow-label"><span class="token arrow-head arrow operator">--</span><span class="token label property">push</span><span class="token arrow operator">--&gt;</span></span>云上
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="git文件中文件的状态"><a href="#git文件中文件的状态" class="header-anchor">#</a> git文件中文件的状态</h3> <p>Git工作区中的文件存在两种状态：
+untracked未跟踪（未被纳入版本控制）
+tracked已跟踪（被纳入版本控制）
+1)Unmodified未修改状态
+2)Modified已修改状态
+3)Staged已暂存状态</p> <h3 id="本地仓库常用命令"><a href="#本地仓库常用命令" class="header-anchor">#</a> 本地仓库常用命令</h3> <div class="language-java line-numbers-mode"><pre class="language-java"><code># 查看文件状态
+git status
+
+# 将文件添加到暂存区
+git add
+
+# 将暂存区中的文件取消或者是切换到指定版本
+git reset 文件名
+git reset <span class="token operator">--</span>hard logID
+
+# 将暂存区的文件提交到版本库
+git commmit
+
+# 查看日志
+git log
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="远程仓库操作命令"><a href="#远程仓库操作命令" class="header-anchor">#</a> 远程仓库操作命令</h3> <div class="language-html line-numbers-mode"><pre class="language-html"><code>## 查看远程仓库
+git remote
+
+## 查看远程仓库详细信息
+git remote -v
+
+## 添加远程仓库
+git remote add origin标签 远程仓库url
+
+## 从远程仓库克隆
+git clone <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url</span><span class="token punctuation">&gt;</span></span>
+
+## 从远程仓库拉取
+git pull <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>short-name</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch-name</span><span class="token punctuation">&gt;</span></span>
+
+## 如果本地仓库不是从远程仓库中克隆，而是从本地仓库中新建，并且本地仓库中存有文件，此时
+git管理软件将会报错（fatal:refusing to merge unrelated histories）
+这时候要
+git pull --allow-unrelated-histories <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>short-name</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch-name</span><span class="token punctuation">&gt;</span></span> 
+
+## 推动到远程仓库
+git push <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>remote-name</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>branch-name</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="分支操作"><a href="#分支操作" class="header-anchor">#</a> 分支操作</h3> <ul><li>分支是git中的一个重要的概念，使用分支意味着你的工作可以和主线工作分开，各个分支相互独立，互补干扰。</li> <li>通过git init命令我们可以创建一个默认master分支。</li></ul> <div class="language-html line-numbers-mode"><pre class="language-html"><code>## 查看分支
+git branch
+
+## 创建分支
+git branch [name]
+
+## 切换分支
+git checkout [name]
+
+## 推送远程仓库分支
+git push [shortName][name]
+
+## 合并分支
+git merge [name]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>分支操作，查看分支</li></ul> <div class="language-html line-numbers-mode"><pre class="language-html"><code>## 列出所有本地分支
+git branch 
+
+## 列出所有远程分支
+git brach -r
+
+## 列出所有本地分支和远程分支
+git brach -a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>合并分支，如果遇见分支冲突问题，我们应该怎样解决</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code>## 合并分支
+git merge <span class="token punctuation">[</span>要拉进来合并分支的name<span class="token punctuation">]</span>
+
+## 如果遇见分支冲突应该怎样解决
+git merge <span class="token operator">-</span>i <span class="token punctuation">[</span>要拉进来合并分支的name<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="标签操作"><a href="#标签操作" class="header-anchor">#</a> 标签操作</h3> <p>git中的标签，是指在某一个时间，git仓库中数据的状态，类似于快照。通过标签，我们可以快速找到我们在某一个事件开发时候的状态。</p> <p>标签起到版本控制的作用，分支起到开发隔离的作用</p> <ul><li>标签相关命令</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code>## 列出已有标签
+git tag
+
+## 创建标签
+git tag <span class="token punctuation">[</span>tag name<span class="token punctuation">]</span>
+
+## 将标签推送到远程库
+git push <span class="token punctuation">[</span>short_name<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag_name<span class="token punctuation">]</span>
+
+## 检出标签
+git checkout <span class="token operator">-</span>b <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag_name<span class="token punctuation">]</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>检出标签</li></ul> <p>创建一个新的分支，来指向某个标签</p> <p>git checkout -b test_v1 v0.1</p> <h1 id="在idea中使用git"><a href="#在idea中使用git" class="header-anchor">#</a> 在IDEA中使用git</h1> <h3 id="在idea中配置git"><a href="#在idea中配置git" class="header-anchor">#</a> 在idea中配置git</h3> <ul><li>idea中关联git软件</li> <li>VCS version control system 版本控制系统</li></ul> <h3 id="获取git仓库-2"><a href="#获取git仓库-2" class="header-anchor">#</a> 获取git仓库</h3> <ul><li>从本地初始化仓库</li> <li>从远程克隆仓库</li></ul> <h3 id="ignore文件的作用和更改"><a href="#ignore文件的作用和更改" class="header-anchor">#</a> .ignore文件的作用和更改</h3> <ul><li>描述忽略管理的文件</li></ul> <h3 id="本地仓库操作"><a href="#本地仓库操作" class="header-anchor">#</a> 本地仓库操作</h3> <ul><li><p>将文件加入到暂存区</p> <p>两种方式</p></li> <li><p>将暂存区的文件提交到版本库</p> <p>右键进入git</p></li> <li><p>查看日志</p> <p>show history</p></li></ul> <h3 id="远程仓库操作"><a href="#远程仓库操作" class="header-anchor">#</a> 远程仓库操作</h3> <ul><li><p>查看远程仓库</p> <p>怎样查看本地仓库关联的远程仓库是哪个</p> <p>在此界面删除，删除的是本地仓库和远程仓库的关联，而非删除远程仓库。</p></li> <li><p>添加远程仓库</p> <p>增加添加远程仓库</p> <p>一个本地仓库可以关联多个远程仓库</p></li> <li><p>推送至远程仓库</p> <p>右键git，push</p> <p>commit &amp; push ，一起操作</p></li> <li><p>从远程仓库拉取</p> <p>右键菜单拉取</p></li></ul> <h3 id="分支操作-2"><a href="#分支操作-2" class="header-anchor">#</a> 分支操作</h3> <ul><li><p>查看分支</p> <p>右键git,branch</p> <p>右下角branch</p></li> <li><p>创建分支</p> <p>右键git，branch</p> <p>右下角branch</p></li> <li><p>切换分支</p> <p>右下角branch，checkout</p></li> <li><p>将分支推送到远程仓库</p></li> <li><p>分支合并</p> <p>checkout到主分支，右下角，merge要合并的分支。</p></li></ul></div> <div class="page-meta"><footer class="page-edit" style="margin:0;"><!----> <!----></footer> <div class="page-views" data-v-ad827708><i class="fas fa-eye" data-v-ad827708></i> <span class="view-count" data-v-ad827708><span id="busuanzi_container_page_pv" style="display: none;" data-v-ad827708>
+            阅读次数: <span id="busuanzi_value_page_pv" data-v-ad827708>0</span></span></span></div></div> <!----></div> <div class="toc-container-sidebar"><div class="pos-box"><div class="icon-arrow"></div> <div class="scroll-box" style="max-height:86vh"><div style="font-weight:bold;">Git</div> <hr> <div class="toc-box"><!----></div></div></div></div></div>  <main class="footer"> <div class="copy-right"><a target="_blank" rel="noreferrer">
+              
+            </a></div></main></main> <aside class="page-sidebar"> <div class="page-side-toolbar"></div>  </aside></div><div class="global-ui"><div></div><!----></div></div>
+    <script src="/assets/js/app.864bef02.js" defer></script><script src="/assets/js/1.a3dfb871.js" defer></script><script src="/assets/js/93.fc03df3e.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lin</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="description" content="记录进步的点滴">
+    <meta property="og:site_name" content="lin">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bigdragonlin.github.io/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E6%B8%B8%E6%88%8F/ODBC%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BD%BF%E7%94%A8.html">
+    <meta name="twitter:url" content="https://bigdragonlin.github.io/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E6%B8%B8%E6%88%8F/ODBC%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BD%BF%E7%94%A8.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="程序员, 编程, 计算机">
+    <meta property="article:tag" content="程序员">
+    <meta name="keywords" content="编程学习路线, 编程知识百科, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 求职, 面经">
+    
+    <link rel="preload" href="/assets/css/0.styles.99b3430f.css" as="style"><link rel="preload" href="/assets/js/app.864bef02.js" as="script"><link rel="preload" href="/assets/js/1.a3dfb871.js" as="script"><link rel="preload" href="/assets/js/105.9ca43390.js" as="script"><link rel="prefetch" href="/assets/js/10.c9f6e15d.js"><link rel="prefetch" href="/assets/js/100.8a6433c8.js"><link rel="prefetch" href="/assets/js/101.c2293009.js"><link rel="prefetch" href="/assets/js/102.e1c3f24b.js"><link rel="prefetch" href="/assets/js/103.bf53b9c8.js"><link rel="prefetch" href="/assets/js/104.157e77e8.js"><link rel="prefetch" href="/assets/js/106.fa317389.js"><link rel="prefetch" href="/assets/js/107.043af6dc.js"><link rel="prefetch" href="/assets/js/108.bf17c2b5.js"><link rel="prefetch" href="/assets/js/109.0f1b1da9.js"><link rel="prefetch" href="/assets/js/11.675ae2e2.js"><link rel="prefetch" href="/assets/js/110.f4e87a18.js"><link rel="prefetch" href="/assets/js/111.16545c58.js"><link rel="prefetch" href="/assets/js/112.359669af.js"><link rel="prefetch" href="/assets/js/113.961184aa.js"><link rel="prefetch" href="/assets/js/114.f788fd92.js"><link rel="prefetch" href="/assets/js/115.a69a17ee.js"><link rel="prefetch" href="/assets/js/116.49a9548d.js"><link rel="prefetch" href="/assets/js/117.a9ceb4b7.js"><link rel="prefetch" href="/assets/js/118.9e819ad1.js"><link rel="prefetch" href="/assets/js/119.5046f875.js"><link rel="prefetch" href="/assets/js/12.611fe139.js"><link rel="prefetch" href="/assets/js/120.e6266904.js"><link rel="prefetch" href="/assets/js/121.58cddf5c.js"><link rel="prefetch" href="/assets/js/122.bf02de8f.js"><link rel="prefetch" href="/assets/js/123.3058cf41.js"><link rel="prefetch" href="/assets/js/124.eb6c5a8d.js"><link rel="prefetch" href="/assets/js/125.f8b79ff7.js"><link rel="prefetch" href="/assets/js/126.6d88afcd.js"><link rel="prefetch" href="/assets/js/127.f0de75d9.js"><link rel="prefetch" href="/assets/js/128.e3170bcd.js"><link rel="prefetch" href="/assets/js/129.d19271cc.js"><link rel="prefetch" href="/assets/js/13.bbcb9761.js"><link rel="prefetch" href="/assets/js/130.dbfc385f.js"><link rel="prefetch" href="/assets/js/131.29442bfe.js"><link rel="prefetch" href="/assets/js/132.29f15f9c.js"><link rel="prefetch" href="/assets/js/133.a5b71821.js"><link rel="prefetch" href="/assets/js/134.ff2dbb3a.js"><link rel="prefetch" href="/assets/js/135.91d85695.js"><link rel="prefetch" href="/assets/js/136.3d559254.js"><link rel="prefetch" href="/assets/js/137.060c27f6.js"><link rel="prefetch" href="/assets/js/138.5256823e.js"><link rel="prefetch" href="/assets/js/139.3d6dcd70.js"><link rel="prefetch" href="/assets/js/14.27da1495.js"><link rel="prefetch" href="/assets/js/140.7dbd39eb.js"><link rel="prefetch" href="/assets/js/141.f00e6674.js"><link rel="prefetch" href="/assets/js/142.17e87740.js"><link rel="prefetch" href="/assets/js/143.a2851f84.js"><link rel="prefetch" href="/assets/js/144.c4abe3a9.js"><link rel="prefetch" href="/assets/js/15.49e75645.js"><link rel="prefetch" href="/assets/js/16.09145204.js"><link rel="prefetch" href="/assets/js/17.6b86b1e5.js"><link rel="prefetch" href="/assets/js/18.d042910d.js"><link rel="prefetch" href="/assets/js/19.ddb3a096.js"><link rel="prefetch" href="/assets/js/2.d74f4bad.js"><link rel="prefetch" href="/assets/js/20.3ace0aa5.js"><link rel="prefetch" href="/assets/js/21.7eb1c3cc.js"><link rel="prefetch" href="/assets/js/22.cff4c035.js"><link rel="prefetch" href="/assets/js/23.07adb667.js"><link rel="prefetch" href="/assets/js/24.29d6a672.js"><link rel="prefetch" href="/assets/js/25.f83be928.js"><link rel="prefetch" href="/assets/js/26.d1712bb0.js"><link rel="prefetch" href="/assets/js/27.25530b6e.js"><link rel="prefetch" href="/assets/js/28.a340957f.js"><link rel="prefetch" href="/assets/js/29.f2754eb7.js"><link rel="prefetch" href="/assets/js/3.72a02e88.js"><link rel="prefetch" href="/assets/js/30.8e7cf4dd.js"><link rel="prefetch" href="/assets/js/31.bf3faca2.js"><link rel="prefetch" href="/assets/js/32.4087c135.js"><link rel="prefetch" href="/assets/js/33.7696f9d2.js"><link rel="prefetch" href="/assets/js/34.56b8aa20.js"><link rel="prefetch" href="/assets/js/35.e5dd505a.js"><link rel="prefetch" href="/assets/js/36.933ef963.js"><link rel="prefetch" href="/assets/js/37.4bf277b3.js"><link rel="prefetch" href="/assets/js/38.898c86e2.js"><link rel="prefetch" href="/assets/js/39.2b08ff32.js"><link rel="prefetch" href="/assets/js/4.2002c685.js"><link rel="prefetch" href="/assets/js/40.de5b4385.js"><link rel="prefetch" href="/assets/js/41.4b058022.js"><link rel="prefetch" href="/assets/js/42.d9754d64.js"><link rel="prefetch" href="/assets/js/43.1688f578.js"><link rel="prefetch" href="/assets/js/44.8b11eb44.js"><link rel="prefetch" href="/assets/js/45.3fb7a5e7.js"><link rel="prefetch" href="/assets/js/46.7512c87a.js"><link rel="prefetch" href="/assets/js/47.69f52a8d.js"><link rel="prefetch" href="/assets/js/48.48367446.js"><link rel="prefetch" href="/assets/js/49.154237f1.js"><link rel="prefetch" href="/assets/js/5.ed8fd711.js"><link rel="prefetch" href="/assets/js/50.2d51489f.js"><link rel="prefetch" href="/assets/js/51.e3e48a00.js"><link rel="prefetch" href="/assets/js/52.71319e9d.js"><link rel="prefetch" href="/assets/js/53.76670559.js"><link rel="prefetch" href="/assets/js/54.b2a18c59.js"><link rel="prefetch" href="/assets/js/55.a206441f.js"><link rel="prefetch" href="/assets/js/56.1b940626.js"><link rel="prefetch" href="/assets/js/57.6ab294c0.js"><link rel="prefetch" href="/assets/js/58.a2057559.js"><link rel="prefetch" href="/assets/js/59.3c0e4c86.js"><link rel="prefetch" href="/assets/js/6.a237149d.js"><link rel="prefetch" href="/assets/js/60.9d8d9dbc.js"><link rel="prefetch" href="/assets/js/61.b3811e77.js"><link rel="prefetch" href="/assets/js/62.5d38f7cd.js"><link rel="prefetch" href="/assets/js/63.264e91fb.js"><link rel="prefetch" href="/assets/js/64.4b55aee3.js"><link rel="prefetch" href="/assets/js/65.09c20b34.js"><link rel="prefetch" href="/assets/js/66.0fc1c46a.js"><link rel="prefetch" href="/assets/js/67.4c9f3b4a.js"><link rel="prefetch" href="/assets/js/68.4e547366.js"><link rel="prefetch" href="/assets/js/69.dc0a9ac3.js"><link rel="prefetch" href="/assets/js/7.b3d59ec2.js"><link rel="prefetch" href="/assets/js/70.b2a017c1.js"><link rel="prefetch" href="/assets/js/71.da6e8dd0.js"><link rel="prefetch" href="/assets/js/72.679cfcfc.js"><link rel="prefetch" href="/assets/js/73.cad8a570.js"><link rel="prefetch" href="/assets/js/74.0b4291a0.js"><link rel="prefetch" href="/assets/js/75.012f73db.js"><link rel="prefetch" href="/assets/js/76.b119d1d7.js"><link rel="prefetch" href="/assets/js/77.9d8542ce.js"><link rel="prefetch" href="/assets/js/78.11fe2c8f.js"><link rel="prefetch" href="/assets/js/79.29ec4f8c.js"><link rel="prefetch" href="/assets/js/80.9b0351da.js"><link rel="prefetch" href="/assets/js/81.484df1ec.js"><link rel="prefetch" href="/assets/js/82.997096cc.js"><link rel="prefetch" href="/assets/js/83.e0d99296.js"><link rel="prefetch" href="/assets/js/84.b6a6173e.js"><link rel="prefetch" href="/assets/js/85.23bee2c8.js"><link rel="prefetch" href="/assets/js/86.e969e7f4.js"><link rel="prefetch" href="/assets/js/87.c94d3f79.js"><link rel="prefetch" href="/assets/js/88.62d6286c.js"><link rel="prefetch" href="/assets/js/89.e782e446.js"><link rel="prefetch" href="/assets/js/90.084964cc.js"><link rel="prefetch" href="/assets/js/91.7723e00b.js"><link rel="prefetch" href="/assets/js/92.3b4b1296.js"><link rel="prefetch" href="/assets/js/93.fc03df3e.js"><link rel="prefetch" href="/assets/js/94.10f95496.js"><link rel="prefetch" href="/assets/js/95.b9a17ac4.js"><link rel="prefetch" href="/assets/js/96.1527c152.js"><link rel="prefetch" href="/assets/js/97.51430cba.js"><link rel="prefetch" href="/assets/js/98.35fb5064.js"><link rel="prefetch" href="/assets/js/99.7fa83e2c.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.3b28fe31.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.99b3430f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="lin" class="logo"> <span class="site-name can-hide">lin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/知识碎片/" class="nav-link"><!---->
+  知识碎片
+</a></div><div class="nav-item"><a href="/读书笔记/" class="nav-link"><!---->
+  读书笔记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/知识碎片/" class="nav-link"><!---->
+  知识碎片
+</a></div><div class="nav-item"><a href="/读书笔记/" class="nav-link"><!---->
+  读书笔记
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="content"><div style="width:100%"><div class="theme-default-content custom-content content__default"><div class="language-C++ line-numbers-mode"><pre class="language-text"><code>#include &lt;iostream&gt;
+//ODBC用到的头文件
+#include &lt;windows.h&gt;
+#include &lt;sql.h&gt;
+#include &lt;sqlext.h&gt;
+#include &lt;sqltypes.h&gt;
+#include &lt;tchar.h&gt;
+#include &lt;io.h&gt;      // 包含 _setmode
+#include &lt;fcntl.h&gt;   // 包含 _O_U16TEXT
+using namespace std;
+
+void check(SQLRETURN ret, wstring type, SQLHENV hEnv, SQLHDBC hDbc, SQLHSTMT hStmt) {
+    if (ret == SQL_ERROR) {
+        wcout &lt;&lt; type &lt;&lt; _T(&quot;失败！&quot;) &lt;&lt; endl;
+        //获取错误信息 
+        SQLTCHAR state[128] = { 0 };
+        SQLTCHAR msg[128] = { 0 };
+        SQLRETURN ret = SQLError(hEnv, hDbc, hStmt, state, NULL, msg, sizeof(msg), NULL);
+        wcout &lt;&lt; state &lt;&lt; &quot; &quot; &lt;&lt; msg &lt;&lt; endl;
+
+        exit(-1);
+    }
+}
+
+int main()
+{
+    //设置为中文兼容unicode
+    _wsetlocale(LC_ALL, L&quot;chs&quot;);
+
+    // 设置控制台输出编码为UTF-8
+    _setmode(_fileno(stdout), _O_U16TEXT);
+
+    // 声明环境句柄
+    SQLHENV hEnv = NULL;
+    //声明连接句柄
+    SQLHDBC hDbc = NULL;
+    //声明语句句柄
+    SQLHSTMT hStmt = NULL;
+    //声明返回值
+    SQLRETURN ret;
+
+    // SQL_HANDLE_ENV;  sql handle environment 环境
+    // SQL_HANDLE_DBC; sql handle database connection 数据库连接
+    // SQL_HANDLE_STMT; sql handle statement 执行sql语句
+    // SQL_HANDLE_DESC; sql handle descriptor 描述数据的属性
+    
+    //分配环境句柄
+    ret = SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, &amp;hEnv); 
+    check(ret, _T(&quot;分配环境句柄&quot;), hEnv, hDbc, hStmt);
+
+    //设定ODBC版本 sql set environment attribute
+    ret = SQLSetEnvAttr(hEnv, SQL_ATTR_ODBC_VERSION, (SQLPOINTER)SQL_OV_ODBC3, 0);
+    check(ret, _T(&quot;ODBC版本设置&quot;), hEnv, hDbc, hStmt);
+    
+    //分配数据库连接句柄
+    ret = SQLAllocHandle(SQL_HANDLE_DBC, hEnv, &amp;hDbc);
+    check(ret, _T(&quot;分配连接句柄&quot;), hEnv, hDbc, hStmt);
+    
+    //根据DSN连接数据库，SQL_NTS为自动计算前面字符串长度
+    // 使用SQLDriverConnect并指定连接字符串
+    SQLTCHAR connectionString[] = _T(&quot;Driver={SQL Server};Server=172.16.10.251,10097;Database=gameconfig;Uid=fz536;Pwd=G4H7cA3pILjo;&quot;);
+    //sql type char
+    SQLTCHAR outConnString[1024];
+    SQLSMALLINT outConnStringLen;
+
+    //SQL_NTS是sql null terminated string
+    ret = SQLDriverConnect(hDbc, NULL, connectionString,
+        SQL_NTS, outConnString, 1024, &amp;outConnStringLen, SQL_DRIVER_NOPROMPT);
+
+    check(ret, _T(&quot;连接数据库&quot;), hEnv, hDbc, hStmt);
+    wcout &lt;&lt; _T(&quot;连接数据库成功！&quot;) &lt;&lt; endl;
+
+    // 分配语句句柄
+    ret = SQLAllocHandle(SQL_HANDLE_STMT, hDbc, &amp;hStmt);
+    check(ret, _T(&quot;分配语句句柄&quot;), hEnv, hDbc, hStmt);
+
+    // sql查询语句
+    SQLTCHAR sql[] = _T(&quot;SELECT 道具名称 FROM gameconfig.dbo.gcf_item WHERE 道具名称 LIKE '%剑%'&quot;);
+    ret = SQLExecDirect(hStmt, sql, SQL_NTS); // SQL_NTS为自动计算前面字符串长度
+    check(ret, _T(&quot;执行查询语句&quot;), hEnv, hDbc, hStmt);
+
+    // 绑定列
+    TCHAR name[128] = { 0 };
+    SQLLEN len;
+
+    // SQLRETURN SQLBindCol(
+    // SQLHSTMT       StatementHandle,  // 语句句柄
+    // SQLUSMALLINT   ColumnNumber,     // 列号，从1开始
+    // SQLSMALLINT    TargetType,       // 目标类型，表示应用程序中存储数据的类型
+    // SQLPOINTER     TargetValuePtr,   // 目标指针，指向存储数据的缓冲区
+    // SQLLEN         BufferLength,     // 缓冲区长度
+    // SQLLEN        *StrLen_or_Ind     // 指向实际数据长度或指示器的指针
+    // );
+    // 这段代码绑定了结果集的第一列到 name 缓冲区。
+    // 当我们调用 SQLFetch 时，第一列的数据会被自动放入 name 缓冲区。
+    
+    ret = SQLBindCol(hStmt, 1, SQL_C_WCHAR, name, sizeof(name), &amp;len);
+    check(ret, _T(&quot;绑定列&quot;), hEnv, hDbc, hStmt);
+
+    ret = SQLFetch(hStmt);
+    while (ret != SQL_NO_DATA)
+    {
+        wcout &lt;&lt; name &lt;&lt; endl;
+        ZeroMemory(name, sizeof(name));
+        ret = SQLFetch(hStmt);
+    }
+    
+    //释放语句句柄
+    if (hStmt) {
+        SQLFreeHandle(SQL_HANDLE_STMT, hStmt);
+    }
+    //释放连接句柄
+    if (hDbc) {
+        SQLDisconnect(hDbc);
+        SQLFreeHandle(SQL_HANDLE_DBC, hDbc);
+    }
+    //释放环境句柄
+    if (hEnv) {
+        SQLFreeHandle(SQL_HANDLE_ENV, hEnv);
+    }
+    wcout &lt;&lt; _T(&quot;断开数据库连接！&quot;) &lt;&lt; endl;
+    return 0;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br></div></div></div> <div class="page-meta"><footer class="page-edit" style="margin:0;"><!----> <!----></footer> <div class="page-views" data-v-ad827708><i class="fas fa-eye" data-v-ad827708></i> <span class="view-count" data-v-ad827708><span id="busuanzi_container_page_pv" style="display: none;" data-v-ad827708>
+            阅读次数: <span id="busuanzi_value_page_pv" data-v-ad827708>0</span></span></span></div></div> <!----></div> <div class="toc-container-sidebar"><div class="pos-box"><div class="icon-arrow"></div> <div class="scroll-box" style="max-height:86vh"><div style="font-weight:bold;"></div> <hr> <div class="toc-box"><!----></div></div></div></div></div>  <main class="footer"> <div class="copy-right"><a target="_blank" rel="noreferrer">
+              
+            </a></div></main></main> <aside class="page-sidebar"> <div class="page-side-toolbar"></div>  </aside></div><div class="global-ui"><div></div><!----></div></div>
+    <script src="/assets/js/app.864bef02.js" defer></script><script src="/assets/js/1.a3dfb871.js" defer></script><script src="/assets/js/105.9ca43390.js" defer></script>
+  </body>
+</html>
