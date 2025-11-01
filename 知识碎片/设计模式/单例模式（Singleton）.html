@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>单例模式（Singleton） | lin</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="description" content="记录进步的点滴">
+    <meta property="og:site_name" content="lin">
+    <meta property="og:title" content="单例模式（Singleton）">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bigdragonlin.github.io/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html">
+    <meta name="twitter:title" content="单例模式（Singleton）">
+    <meta name="twitter:url" content="https://bigdragonlin.github.io/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="程序员, 编程, 计算机">
+    <meta property="article:tag" content="程序员">
+    <meta name="keywords" content="编程学习路线, 编程知识百科, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 求职, 面经">
+    
+    <link rel="preload" href="/assets/css/0.styles.dd3f1dd5.css" as="style"><link rel="preload" href="/assets/js/app.ca6810f0.js" as="script"><link rel="preload" href="/assets/js/1.a7899151.js" as="script"><link rel="preload" href="/assets/js/118.14319035.js" as="script"><link rel="prefetch" href="/assets/js/10.8111f976.js"><link rel="prefetch" href="/assets/js/100.c3d9648c.js"><link rel="prefetch" href="/assets/js/101.31bd77ed.js"><link rel="prefetch" href="/assets/js/102.75748718.js"><link rel="prefetch" href="/assets/js/103.fefc26c8.js"><link rel="prefetch" href="/assets/js/104.6833bd21.js"><link rel="prefetch" href="/assets/js/105.2a44ef65.js"><link rel="prefetch" href="/assets/js/106.b085d75e.js"><link rel="prefetch" href="/assets/js/107.d43eadfd.js"><link rel="prefetch" href="/assets/js/108.a82c88db.js"><link rel="prefetch" href="/assets/js/109.43567b2e.js"><link rel="prefetch" href="/assets/js/11.675ae2e2.js"><link rel="prefetch" href="/assets/js/110.e9b76f2e.js"><link rel="prefetch" href="/assets/js/111.228eb17e.js"><link rel="prefetch" href="/assets/js/112.16977eac.js"><link rel="prefetch" href="/assets/js/113.bf85006c.js"><link rel="prefetch" href="/assets/js/114.1feafc0d.js"><link rel="prefetch" href="/assets/js/115.27c63cfd.js"><link rel="prefetch" href="/assets/js/116.6b258b63.js"><link rel="prefetch" href="/assets/js/117.2a4ea694.js"><link rel="prefetch" href="/assets/js/119.b45026b0.js"><link rel="prefetch" href="/assets/js/12.611fe139.js"><link rel="prefetch" href="/assets/js/120.f3eada75.js"><link rel="prefetch" href="/assets/js/121.d5813ad6.js"><link rel="prefetch" href="/assets/js/122.203b5e6a.js"><link rel="prefetch" href="/assets/js/123.8c4f7397.js"><link rel="prefetch" href="/assets/js/124.04cff09e.js"><link rel="prefetch" href="/assets/js/125.05b77e9b.js"><link rel="prefetch" href="/assets/js/126.385ad5db.js"><link rel="prefetch" href="/assets/js/127.5c05acb6.js"><link rel="prefetch" href="/assets/js/128.acc58546.js"><link rel="prefetch" href="/assets/js/129.e9e12ec9.js"><link rel="prefetch" href="/assets/js/13.bbcb9761.js"><link rel="prefetch" href="/assets/js/130.eb6bd4fc.js"><link rel="prefetch" href="/assets/js/131.77bc5ddd.js"><link rel="prefetch" href="/assets/js/132.a696f9a5.js"><link rel="prefetch" href="/assets/js/133.bd92160a.js"><link rel="prefetch" href="/assets/js/134.92264011.js"><link rel="prefetch" href="/assets/js/135.9a1d9b8a.js"><link rel="prefetch" href="/assets/js/136.e3f55bc9.js"><link rel="prefetch" href="/assets/js/137.38a53ca5.js"><link rel="prefetch" href="/assets/js/138.9af220ba.js"><link rel="prefetch" href="/assets/js/139.2ea1d0aa.js"><link rel="prefetch" href="/assets/js/14.27da1495.js"><link rel="prefetch" href="/assets/js/140.f24895fe.js"><link rel="prefetch" href="/assets/js/141.8380d4d5.js"><link rel="prefetch" href="/assets/js/142.cef7432d.js"><link rel="prefetch" href="/assets/js/143.7a359979.js"><link rel="prefetch" href="/assets/js/144.d135462b.js"><link rel="prefetch" href="/assets/js/145.b6f69890.js"><link rel="prefetch" href="/assets/js/146.66faecd7.js"><link rel="prefetch" href="/assets/js/15.49e75645.js"><link rel="prefetch" href="/assets/js/16.09145204.js"><link rel="prefetch" href="/assets/js/17.6b86b1e5.js"><link rel="prefetch" href="/assets/js/18.d042910d.js"><link rel="prefetch" href="/assets/js/19.ddb3a096.js"><link rel="prefetch" href="/assets/js/2.d74f4bad.js"><link rel="prefetch" href="/assets/js/20.3ace0aa5.js"><link rel="prefetch" href="/assets/js/21.7eb1c3cc.js"><link rel="prefetch" href="/assets/js/22.cff4c035.js"><link rel="prefetch" href="/assets/js/23.07adb667.js"><link rel="prefetch" href="/assets/js/24.29d6a672.js"><link rel="prefetch" href="/assets/js/25.f83be928.js"><link rel="prefetch" href="/assets/js/26.d1712bb0.js"><link rel="prefetch" href="/assets/js/27.25530b6e.js"><link rel="prefetch" href="/assets/js/28.a340957f.js"><link rel="prefetch" href="/assets/js/29.f2754eb7.js"><link rel="prefetch" href="/assets/js/3.72a02e88.js"><link rel="prefetch" href="/assets/js/30.9ac4febe.js"><link rel="prefetch" href="/assets/js/31.1dde25cc.js"><link rel="prefetch" href="/assets/js/32.4087c135.js"><link rel="prefetch" href="/assets/js/33.7696f9d2.js"><link rel="prefetch" href="/assets/js/34.56b8aa20.js"><link rel="prefetch" href="/assets/js/35.e5dd505a.js"><link rel="prefetch" href="/assets/js/36.0906ffc8.js"><link rel="prefetch" href="/assets/js/37.4bf277b3.js"><link rel="prefetch" href="/assets/js/38.898c86e2.js"><link rel="prefetch" href="/assets/js/39.2b08ff32.js"><link rel="prefetch" href="/assets/js/4.2002c685.js"><link rel="prefetch" href="/assets/js/40.de5b4385.js"><link rel="prefetch" href="/assets/js/41.4b058022.js"><link rel="prefetch" href="/assets/js/42.d9754d64.js"><link rel="prefetch" href="/assets/js/43.3d8af8e3.js"><link rel="prefetch" href="/assets/js/44.b49601c7.js"><link rel="prefetch" href="/assets/js/45.3fb7a5e7.js"><link rel="prefetch" href="/assets/js/46.7512c87a.js"><link rel="prefetch" href="/assets/js/47.69f52a8d.js"><link rel="prefetch" href="/assets/js/48.48367446.js"><link rel="prefetch" href="/assets/js/49.154237f1.js"><link rel="prefetch" href="/assets/js/5.ed8fd711.js"><link rel="prefetch" href="/assets/js/50.2d51489f.js"><link rel="prefetch" href="/assets/js/51.e3e48a00.js"><link rel="prefetch" href="/assets/js/52.71319e9d.js"><link rel="prefetch" href="/assets/js/53.76670559.js"><link rel="prefetch" href="/assets/js/54.b2a18c59.js"><link rel="prefetch" href="/assets/js/55.a206441f.js"><link rel="prefetch" href="/assets/js/56.602248d0.js"><link rel="prefetch" href="/assets/js/57.163afc2d.js"><link rel="prefetch" href="/assets/js/58.a2057559.js"><link rel="prefetch" href="/assets/js/59.3c0e4c86.js"><link rel="prefetch" href="/assets/js/6.a237149d.js"><link rel="prefetch" href="/assets/js/60.9d8d9dbc.js"><link rel="prefetch" href="/assets/js/61.b3811e77.js"><link rel="prefetch" href="/assets/js/62.5d38f7cd.js"><link rel="prefetch" href="/assets/js/63.264e91fb.js"><link rel="prefetch" href="/assets/js/64.4b55aee3.js"><link rel="prefetch" href="/assets/js/65.09c20b34.js"><link rel="prefetch" href="/assets/js/66.0fc1c46a.js"><link rel="prefetch" href="/assets/js/67.dc48310c.js"><link rel="prefetch" href="/assets/js/68.5d8c23b0.js"><link rel="prefetch" href="/assets/js/69.03cbc1c9.js"><link rel="prefetch" href="/assets/js/7.b3d59ec2.js"><link rel="prefetch" href="/assets/js/70.b2a017c1.js"><link rel="prefetch" href="/assets/js/71.da6e8dd0.js"><link rel="prefetch" href="/assets/js/72.679cfcfc.js"><link rel="prefetch" href="/assets/js/73.302bc7b7.js"><link rel="prefetch" href="/assets/js/74.f47f2a86.js"><link rel="prefetch" href="/assets/js/75.0435670f.js"><link rel="prefetch" href="/assets/js/76.aaca7275.js"><link rel="prefetch" href="/assets/js/77.1b271da3.js"><link rel="prefetch" href="/assets/js/78.476a924e.js"><link rel="prefetch" href="/assets/js/79.23be6cff.js"><link rel="prefetch" href="/assets/js/80.d592bdd2.js"><link rel="prefetch" href="/assets/js/81.461bcf2e.js"><link rel="prefetch" href="/assets/js/82.9888647c.js"><link rel="prefetch" href="/assets/js/83.d34e3c2a.js"><link rel="prefetch" href="/assets/js/84.0ba58301.js"><link rel="prefetch" href="/assets/js/85.5eb92f6d.js"><link rel="prefetch" href="/assets/js/86.efb3c6d4.js"><link rel="prefetch" href="/assets/js/87.c94d3f79.js"><link rel="prefetch" href="/assets/js/88.62d6286c.js"><link rel="prefetch" href="/assets/js/89.20284e25.js"><link rel="prefetch" href="/assets/js/90.af28317f.js"><link rel="prefetch" href="/assets/js/91.2909df0b.js"><link rel="prefetch" href="/assets/js/92.f47bc2a3.js"><link rel="prefetch" href="/assets/js/93.87f9b7c1.js"><link rel="prefetch" href="/assets/js/94.73eab5f3.js"><link rel="prefetch" href="/assets/js/95.5f08aca2.js"><link rel="prefetch" href="/assets/js/96.a82b607f.js"><link rel="prefetch" href="/assets/js/97.c61bfb76.js"><link rel="prefetch" href="/assets/js/98.55e7d7db.js"><link rel="prefetch" href="/assets/js/99.f1ab16a4.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.3b28fe31.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.dd3f1dd5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="lin" class="logo"> <span class="site-name can-hide">lin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/知识碎片/" class="nav-link"><!---->
+  知识碎片
+</a></div><div class="nav-item"><a href="/读书笔记/" class="nav-link"><!---->
+  读书笔记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/知识碎片/" class="nav-link"><!---->
+  知识碎片
+</a></div><div class="nav-item"><a href="/读书笔记/" class="nav-link"><!---->
+  读书笔记
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="content"><div style="width:100%"><div class="theme-default-content custom-content content__default"><h1 id="单例模式-singleton"><a href="#单例模式-singleton" class="header-anchor">#</a> 单例模式（Singleton）</h1> <h2 id="单例模式概述"><a href="#单例模式概述" class="header-anchor">#</a> 单例模式概述：</h2> <p>单例模式确保一个类只有一个实例，并提供一个全局访问点来访问这个实例。这在需要确保全局只有一个对象时非常有用。</p> <h2 id="实现步骤"><a href="#实现步骤" class="header-anchor">#</a> 实现步骤：</h2> <h2 id="类的定义"><a href="#类的定义" class="header-anchor">#</a> 类的定义：</h2> <h2 id="定义一个名为singleton的类。"><a href="#定义一个名为singleton的类。" class="header-anchor">#</a> 定义一个名为Singleton的类。</h2> <ul><li>私有的静态指针instance，初始值为nullptr，用于指向类的实例。</li> <li>私有的构造函数，防止外部直接创建实例。</li> <li>公有的静态方法getInstance()，用于获取类的实例。</li></ul> <h2 id="方法实现"><a href="#方法实现" class="header-anchor">#</a> 方法实现：</h2> <ul><li>getInstance()方法：</li> <li>检查instance是否为nullptr。</li> <li>如果是，创建一个新的Singleton对象。</li> <li>返回instance。</li> <li>线程安全（根据需要选择）：</li></ul> <p>为了确保线程安全，可以在getInstance()方法中添加锁。
+这一步在多线程应用中非常关键，但会增加一些开销。
+防止复制和赋值：</p> <p>删除或私有化复制构造函数和赋值运算符，防止实例被复制。
+考虑如何安全地销毁单例（如果需要）。</p> <h3 id="基础版本单例模式"><a href="#基础版本单例模式" class="header-anchor">#</a> 基础版本单例模式</h3> <div class="language-c++ line-numbers-mode"><pre class="language-text"><code>#include &lt;iostream&gt;
+
+class Singleton {
+private:
+    static Singleton* instance; // 静态私有实例
+    Singleton() {} // 私有构造函数
+
+public:
+    // 禁止复制和赋值
+    Singleton(const Singleton&amp;) = delete;
+    Singleton&amp; operator=(const Singleton&amp;) = delete;
+
+    // 获取单例对象的静态方法
+    static Singleton* getInstance() {
+        if (instance == nullptr) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+};
+
+// 初始化静态成员变量
+Singleton* Singleton::instance = nullptr;
+
+int main() {
+    // 获取单例对象
+    Singleton* singletonInstance = Singleton::getInstance();
+
+    std::cout &lt;&lt; &quot;Singleton instance address: &quot; &lt;&lt; singletonInstance &lt;&lt; std::endl;
+    // 尝试再次获取单例对象，验证是否为相同实例
+    Singleton* anotherInstance = Singleton::getInstance();
+    std::cout &lt;&lt; &quot;Another Singleton instance address: &quot; &lt;&lt; anotherInstance &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="懒汉式-线程安全版本"><a href="#懒汉式-线程安全版本" class="header-anchor">#</a> 懒汉式（线程安全版本）</h3> <p>在这个实现中，单例实例在第一次被需要时创建。为了保证线程安全，通常会在获取实例的方法中加锁。</p> <div class="language-c++ line-numbers-mode"><pre class="language-text"><code>class Singleton {
+private:
+    static Singleton* instance;
+    Singleton() {}
+public:
+    static Singleton* getInstance() {
+        if (instance == nullptr) { // 双重检查锁定
+            std::lock_guard&lt;std::mutex&gt; lock(mutex); // C++11及以上版本的线程安全锁
+            if (instance == nullptr) {
+                instance = new Singleton();
+            }
+        }
+        return instance;
+    }
+
+private:
+    static std::mutex mutex; // 用于同步的互斥锁
+};
+
+Singleton* Singleton::instance = nullptr;
+std::mutex Singleton::mutex;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="饿汉式-线程安全版本"><a href="#饿汉式-线程安全版本" class="header-anchor">#</a> 饿汉式（线程安全版本）</h3> <p>在这个实现中，单例实例在程序启动时就被创建好了。由于实例是在程序启动时在主线程中创建的，因此自然是线程安全的。</p> <div class="language-c++ line-numbers-mode"><pre class="language-text"><code>class Singleton {
+private:
+    Singleton() {}
+public:
+    static Singleton&amp; getInstance() {
+        static Singleton instance; // 局部静态变量
+        return instance;
+    }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="使用std-call-once和std-once-flag-c-11及以上"><a href="#使用std-call-once和std-once-flag-c-11及以上" class="header-anchor">#</a> 使用std::call_once和std::once_flag（C++11及以上）</h3> <div class="language-c++ line-numbers-mode"><pre class="language-text"><code>class Singleton {
+private:
+    static Singleton* instance;
+    Singleton() {}
+    static std::once_flag flag;
+
+public:
+    static Singleton* getInstance() {
+        std::call_once(flag, [](){ instance = new Singleton(); });
+        return instance;
+    }
+};
+
+Singleton* Singleton::instance = nullptr;
+std::once_flag Singleton::flag;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div> <div class="page-meta"><footer class="page-edit" style="margin:0;"><!----> <!----></footer> <div class="page-views" data-v-1a66a508><i class="fas fa-eye" data-v-1a66a508></i> <span class="view-count" data-v-1a66a508><span id="busuanzi_container_page_pv" style="display: none;" data-v-1a66a508>
+            阅读次数: <span id="busuanzi_value_page_pv" data-v-1a66a508>0</span></span></span></div></div> <!----></div> <div class="toc-container-sidebar"><div class="pos-box"><div class="icon-arrow"></div> <div class="scroll-box" style="max-height:86vh"><div style="font-weight:bold;">单例模式（Singleton）</div> <hr> <div class="toc-box"><ul class="toc-sidebar-links"><li><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#单例模式概述" class="toc-sidebar-link">单例模式概述：</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#实现步骤" class="toc-sidebar-link">实现步骤：</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#类的定义" class="toc-sidebar-link">类的定义：</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#定义一个名为singleton的类。" class="toc-sidebar-link">定义一个名为Singleton的类。</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#方法实现" class="toc-sidebar-link">方法实现：</a><ul class="toc-sidebar-sub-headers"><li class="toc-sidebar-sub-header"><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#基础版本单例模式" class="toc-sidebar-link">基础版本单例模式</a></li><li class="toc-sidebar-sub-header"><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#懒汉式-线程安全版本" class="toc-sidebar-link">懒汉式（线程安全版本）</a></li><li class="toc-sidebar-sub-header"><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#饿汉式-线程安全版本" class="toc-sidebar-link">饿汉式（线程安全版本）</a></li><li class="toc-sidebar-sub-header"><a href="/%E7%9F%A5%E8%AF%86%E7%A2%8E%E7%89%87/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88Singleton%EF%BC%89.html#使用std-call-once和std-once-flag-c-11及以上" class="toc-sidebar-link">使用std::callonce和std::onceflag（C++11及以上）</a></li></ul></li></ul></div></div></div></div></div>  <main class="footer"> <div class="copy-right"><a target="_blank" rel="noreferrer">
+              
+            </a></div></main></main> <aside class="page-sidebar"> <div class="page-side-toolbar"></div>  </aside></div><div class="global-ui"><div></div><!----></div></div>
+    <script src="/assets/js/app.ca6810f0.js" defer></script><script src="/assets/js/1.a7899151.js" defer></script><script src="/assets/js/118.14319035.js" defer></script>
+  </body>
+</html>
