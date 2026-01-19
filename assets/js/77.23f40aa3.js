@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[77],{442:function(t,n,s){"use strict";s.r(n);var e=s(7),o=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[this._v("ai阅读伴侣\n使用谷歌地图爬取意向客户信息\n录入衣服照片，根据当日天气状况，使用邮件发送每日穿搭建议")])])}),[],!1,null,null,null);n.default=o.exports}}]);
